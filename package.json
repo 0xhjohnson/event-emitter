@@ -1,0 +1,28 @@
+{
+  "name": "event-emitter",
+  "version": "0.0.0",
+  "description": "simple event emitter",
+  "main": "src/index.js",
+  "repository": "https://github.com/0xhjohnson/event-emitter",
+  "author": "0xhjohnson <0xhjohnson@protonmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest --verbose",
+    "format": "prettier --write **/*.{js,json,md}"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "prettier": "^2.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}
