@@ -7,19 +7,14 @@
   "author": "0xhjohnson <0xhjohnson@protonmail.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "format": "prettier --write **/*.{js,json,md}"
   },
   "devDependencies": {
     "jest": "^27.1.0",
     "prettier": "^2.3.2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
   },
   "prettier": {
     "singleQuote": true,
